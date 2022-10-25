@@ -1,0 +1,292 @@
+:root {
+  /* font */
+  --main-font: Lexend, sans-serif;
+  --text-color: #212121;
+  --accent-text-color: rgb(233, 222, 222);
+  --aside-bgcolor: #585050;
+  --accent-bgcolor: #c68e8e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.link {
+  display: block;
+  text-decoration: inherit;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  color: var(--text-color);
+  letter-spacing: 0.03em;
+}
+
+.container-aside {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  border: none;
+  width: auto;
+}
+
+.container {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 70px;
+  margin: 0 auto;
+  border: none;
+  width: auto;
+}
+
+.main {
+  display: flex;
+  flex-grow: 2;
+}
+.aside {
+  /* background-color: var(--aside-bgcolor);
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    280deg,
+    rgba(238, 174, 202, 0.6433167016806722) 0%,
+    rgba(120, 95, 116, 1) 100%
+  ); */
+  background-image: url(./images/wooden-plank-textudr.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 700px;
+}
+.contacts {
+  color: var(--accent-text-color);
+}
+
+.contacts__wrapper {
+  border-radius: 50%;
+  overflow: hidden;
+
+  max-width: 400px;
+  max-height: 400px;
+  margin-bottom: 20px;
+}
+
+.aside-titel {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: calc(25 / 20);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacts__list {
+  margin-bottom: 15px;
+}
+.contacts__item {
+  padding: 10px 0;
+  display: flex;
+  font-size: 14px;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.contacts__link {
+  display: flex;
+  gap: 10px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--text-color);
+}
+
+.contacts__icon {
+  fill: currentColor;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__link:hover,
+.social__link:focus {
+  color: var(--text-color);
+}
+.social__icon {
+  fill: currentColor;
+  text-align: center;
+  text-align: inherit;
+}
+
+.languages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 70px;
+}
+
+.softwares__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 70px;
+}
+
+.right-side {
+  background-color: rgba(195, 175, 137, 0.4);
+}
+
+.hero {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  /* background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 0.6012998949579832) 0%,
+    rgba(161, 129, 155, 0.48365283613445376) 100%
+  ); */
+  /* background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 0.6012998949579832) 0%,
+    rgba(120, 95, 116, 0.4948573179271709) 100%
+  ); */
+}
+
+.hero__titel {
+  font-weight: 300;
+  font-size: 50px;
+  line-height: calc(50 / 30);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero__description {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+}
+
+.titel {
+  line-height: 37px;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+  padding-left: 10px;
+}
+
+.profile__description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  /* padding-bottom: 40px; */
+}
+
+.education__list {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  /* padding-bottom: 40px; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.education__item {
+  display: flex;
+  gap: 20px;
+  font-weight: 400;
+}
+
+.edcation__description {
+  font-weight: 300;
+}
+
+/* .experience__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  flex-wrap: wrap;
+}
+
+.experience__item {
+  display: flex;
+  gap: 20px;
+} */
+
+.experience__list {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  align-items: flex-start;
+
+  /* padding-bottom: 40px; */
+}
+
+.experiens__item {
+  vertical-align: top;
+  padding-bottom: 50px;
+}
+
+.experiens__item:nth-child(1) {
+  width: 25%;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.experiens__item:nth-child(2) {
+  width: 25%;
+}
+
+.experiens__item:nth-child(3) {
+  width: 50%;
+}
+
+.skills__item {
+  padding-bottom: 20px;
+}

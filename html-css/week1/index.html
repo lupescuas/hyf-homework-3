@@ -5,80 +5,245 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
     <!-- normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
     <main class="main">
       <aside class="aside">
         <section class="contacts">
-          <div class="container">
-            <img src="" alt="" />
-            <ul class="contacts__list">
-              Contacts
+          <div class="container-aside">
+            <div class="contacts__wrapper">
+              <img
+                src="./images/photo-2.jpeg"
+                alt="smiling girl with dark hair"
+              />
+            </div>
+            <h3 class="contacts__titel aside-titel">Contacts</h3>
+            <ul class="contacts__list list">
               <li class="contacts__item">
-                <a class="contacts__link" href="tel:+4550266204">
-                  <svg class="contacts__icon">
-                    <use href=""></use>
+                <a class="contacts__link link" href="tel:+4550266204">
+                  <svg class="contacts__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-mobile"></use>
                   </svg>
                   +45 50266204
                 </a>
               </li>
               <li class="contacts__item">
                 <a
-                  class="contacts__link"
+                  class="contacts__link link"
                   href="mailto:yaitska.anastasiia@gmail.com"
                 >
-                  <svg class="contacts__icon">
-                    <use href=""></use>
+                  <svg class="contacts__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-mail"></use>
                   </svg>
                   yaitska.anastasiia@gmail.com
                 </a>
               </li>
               <li class="contacts__item">
                 <a
-                  class="contacts__link"
+                  class="contacts__link link"
                   href="https://goo.gl/maps/PZXB8hoBjVXzBv7K7"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <svg class="contacts__icon">
-                    <use href=""></use>
+                  <svg class="contacts__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-location"></use>
                   </svg>
                   Waldemarsgade 4, 1th 6870 Ølgod
                 </a>
               </li>
             </ul>
-            <ul class="social">
+            <ul class="social list">
               <li class="social__item">
-                <a class="social__link" href="">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-slack"></use>
+                <a
+                  class="social__link link"
+                  href="https://app.slack.com/client/T042R06F8BY/D042H1S151D/rimeto_profile/U043A7BDM0R"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social__icon" width="37" height="37">
+                    <use
+                      href="./images/icons.svg#icon-slack"
+                      width="40"
+                      height="40"
+                    ></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="">
-                  <svg class="social__icon">
-                    <use href="./images/icons.svg#icon-github"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="">
-                  <svg class="social__icon">
+                <a
+                  class="social__link link"
+                  href="https://github.com/AnastasiiaYaitska"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social__icon" width="40" height="40">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
+              <li class="social__item">
+                <a
+                  class="social__link link"
+                  href="https://dk.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="social__icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <h3 class="languages aside-titel">Languages</h3>
+            <ul class="languages__list list">
+              <li class="languages__item">Danisk</li>
+              <li class="languages__item">English</li>
+              <li class="languages__item">Ukrainian</li>
+              <li class="languages__item">Russian</li>
+            </ul>
+            <h3 class="softwares aside-titel">Softwares skills</h3>
+            <ul class="softwares__list list">
+              <li class="softwares__item">HTML</li>
+              <li class="softwares__item">CSS</li>
+              <li class="softwares__item">JS</li>
             </ul>
           </div>
         </section>
       </aside>
+      <div class="right-side">
+        <section class="hero">
+          <h1 class="hero__titel">Yaitska Anastasiia</h1>
+          <p class="hero__description">Front-end web developer</p>
+        </section>
+        <section class="profile">
+          <div class="container">
+            <h2 class="profile__titel titel">Profile</h2>
+            <p class="profile__description">
+              I started learning programming as a hobby when I was on maternity
+              leave. I found it exciting and fun. And I got the feeling I could
+              do something meaningful. A reason why I want to become a web
+              developer is because I want to make people's lives easier and more
+              interactive. And I want to work for a company, which has the same
+              philosophy. This point can extremely motivate me to get to work.
+              From a quick glance you can see that I have changed many positions
+              in my career. This fact makes me a person who can adapt to
+              different situations. Iʼm a person who has a broad experience and
+              a flexible mind. I have a good communication skills. All these
+              ability would help me to become a good member of your new students
+              team.
+            </p>
+          </div>
+        </section>
+        <section class="education">
+          <div class="container">
+            <h2 class="education__titel titel">Education</h2>
+            <ul class="education__list list">
+              <li class="education__item">
+                Sep 1998 - Jun 2018
+                <p class="edcation__description">
+                  Gymnasium number 9, Luhansk. Ukrain
+                </p>
+              </li>
+              <li class="education__item">
+                Sep 2009 - Dec 2013
+                <p class="edcation__description">
+                  Veterinary medicine, Lugansk National Agrarian University,
+                  Lygansk
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="experience">
+          <div class="container">
+            <h2 class="experience__titel titel">Work experience</h2>
+            <!-- <ul class="experience__list list">
+
+              <li class="experience__item">
+                Oct 2017-Jun 2022
+                <p class="experience__description">
+                  Feed master Huibert Van Dorp, Ølgod Milking, feeding calves,
+                  registration. Was good at working with others, looking after
+                  sick animals.
+                </p>
+              </li>
+              <li class="experience__item">
+                Feb 2014-Sep 2017
+                <p class="experience__description">
+                  Feed master Henco Brunese, Nordenskov Milking, feeding calves.
+                </p>
+              </li>
+              <li class="experience__item">
+                Feb 2013-Jan 2014
+                <p class="experience__description">
+                  Natural hair extensions master Rich Hair, Lugansk, Ukraine I
+                  did hair extensions in the workshop, i selected the products
+                  individually for each client. I was the link between the
+                  customer and the company.
+                </p>
+              </li>
+            </ul> -->
+            <table class="experience__list">
+              <tr class="experiens__row">
+                <td class="experiens__item">Oct 2017 - Jun 2022</td>
+                <td class="experiens__item">
+                  Feed master <br />Huibert Van Dorp, Ølgod
+                </td>
+                <td class="experiens__item">
+                  Milking, feeding calves, registration. Was good at working
+                  with others, looking after sick animals.
+                </td>
+              </tr>
+              <tr class="experience__list">
+                <td class="experiens__item">Feb 2014 - Sep 2017</td>
+                <td class="experiens__item">
+                  Feed master <br />
+                  Henco Brunese, Nordenskov
+                </td>
+                <td class="experiens__item">Milking, feeding calves.</td>
+              </tr>
+              <tr class="experience__list">
+                <td class="experiens__item">Feb 2013 - Jan 2014</td>
+                <td class="experiens__item">
+                  Natural hair extensions master Rich Hair,<br />
+                  Lugansk, Ukraine
+                </td>
+                <td class="experiens__item">
+                  I did hair extensions in the workshop, i selected the products
+                  individually for each client. I was the link between the
+                  customer and the company.a
+                </td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <section class="skills">
+          <div class="container">
+            <h2 class="skills__titel titel">Skills</h2>
+            <ul class="skills__list list">
+              <li class="skills__item">Flexible</li>
+              <li class="skills__item">Smart</li>
+              <li class="skills__item">Easy learn</li>
+              <li class="skills__item">Responsibility</li>
+              <li class="skills__item">Motivated</li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>
