@@ -3,8 +3,9 @@
   --main-font: Lexend, sans-serif;
   --text-color: #212121;
   --accent-text-color: rgb(233, 222, 222);
-  --aside-bgcolor: #585050;
-  --accent-bgcolor: #c68e8e;
+
+  --accent-bgcolor: rgba(195, 175, 137, 0.8);
+  --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -40,9 +41,14 @@ body {
   line-height: calc(16 / 14);
   color: var(--text-color);
   letter-spacing: 0.03em;
+  background-image: url(./images/wooden-plank-textudr.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container-aside {
+  padding-top: 50px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -71,10 +77,10 @@ body {
     rgba(238, 174, 202, 0.6433167016806722) 0%,
     rgba(120, 95, 116, 1) 100%
   ); */
-  background-image: url(./images/wooden-plank-textudr.jpeg);
+  /* background-image: url(./images/wooden-plank-textudr.jpeg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   max-width: 700px;
 }
 .contacts {
@@ -87,7 +93,7 @@ body {
 
   max-width: 400px;
   max-height: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 90px;
 }
 
 .aside-titel {
@@ -116,7 +122,7 @@ body {
   display: flex;
   gap: 10px;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--anim);
 }
 
 .contacts__link:hover,
@@ -137,20 +143,21 @@ body {
 }
 
 .social__link {
-  display: flex;
-  align-items: center;
+  display: inline-flex;
+
   justify-content: center;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--anim);
 }
 
 .social__link:hover,
 .social__link:focus {
   color: var(--text-color);
 }
+
 .social__icon {
   fill: currentColor;
-  text-align: center;
+
   text-align: inherit;
 }
 
@@ -169,7 +176,7 @@ body {
 }
 
 .right-side {
-  background-color: rgba(195, 175, 137, 0.4);
+  background-color: var(--accent-bgcolor);
 }
 
 .hero {
@@ -218,6 +225,7 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
+  line-height: calc(25 / 16);
   /* padding-bottom: 40px; */
 }
 
@@ -260,17 +268,18 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  border-collapse: collapse;
+  border-collapse: separate;
   width: 100%;
   table-layout: fixed;
   align-items: flex-start;
+  border-spacing: 10px 50px;
 
   /* padding-bottom: 40px; */
 }
 
 .experiens__item {
   vertical-align: top;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 
 .experiens__item:nth-child(1) {
@@ -287,6 +296,19 @@ body {
   width: 50%;
 }
 
-.skills__item {
-  padding-bottom: 20px;
+.experiens__row:not(:last-child) {
+  padding-bottom: 50px;
+}
+
+.skills__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hobbies__list {
+  display: flex;
+  gap: 70px;
+  margin: 0;
+  padding-left: 15px;
 }
