@@ -1,11 +1,16 @@
 :root {
-  /* font */
   --main-font: Lexend, sans-serif;
   --text-color: #212121;
   --accent-text-color: rgb(233, 222, 222);
 
-  --accent-bgcolor: rgba(195, 175, 137, 0.8);
+  --accent-bgcolor: rgba(195, 175, 137, 0.9);
   --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1,
@@ -70,17 +75,6 @@ body {
   flex-grow: 2;
 }
 .aside {
-  /* background-color: var(--aside-bgcolor);
-  background: rgb(238, 174, 202);
-  background: linear-gradient(
-    280deg,
-    rgba(238, 174, 202, 0.6433167016806722) 0%,
-    rgba(120, 95, 116, 1) 100%
-  ); */
-  /* background-image: url(./images/wooden-plank-textudr.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   max-width: 700px;
 }
 .contacts {
@@ -125,11 +119,6 @@ body {
   transition: color var(--anim);
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--text-color);
-}
-
 .contacts__icon {
   fill: currentColor;
 }
@@ -151,8 +140,10 @@ body {
 }
 
 .social__link:hover,
-.social__link:focus {
-  color: var(--text-color);
+.social__link:focus,
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--accent-bgcolor);
 }
 
 .social__icon {
@@ -182,18 +173,6 @@ body {
 .hero {
   padding-top: 100px;
   padding-bottom: 100px;
-
-  /* background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 0.6012998949579832) 0%,
-    rgba(161, 129, 155, 0.48365283613445376) 100%
-  ); */
-  /* background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 0.6012998949579832) 0%,
-    rgba(120, 95, 116, 0.4948573179271709) 100%
-  ); */
 }
 
 .hero__titel {
@@ -226,14 +205,13 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: calc(25 / 16);
-  /* padding-bottom: 40px; */
 }
 
 .education__list {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  /* padding-bottom: 40px; */
+
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -249,21 +227,6 @@ body {
   font-weight: 300;
 }
 
-/* .experience__list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  flex-wrap: wrap;
-}
-
-.experience__item {
-  display: flex;
-  gap: 20px;
-} */
-
 .experience__list {
   font-style: normal;
   font-weight: 300;
@@ -273,13 +236,10 @@ body {
   table-layout: fixed;
   align-items: flex-start;
   border-spacing: 10px 50px;
-
-  /* padding-bottom: 40px; */
 }
 
 .experiens__item {
   vertical-align: top;
-  /* padding-bottom: 50px; */
 }
 
 .experiens__item:nth-child(1) {
